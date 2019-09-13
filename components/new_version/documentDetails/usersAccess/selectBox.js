@@ -234,7 +234,8 @@ module.exports = React.createClass({displayName: 'exports',
 
     if (!this.isMultiple() || Array.isArray(value)) {
       return value
-    } if (value != null) {
+    }
+    if (value != null) {
       return [value]
     }
     return []

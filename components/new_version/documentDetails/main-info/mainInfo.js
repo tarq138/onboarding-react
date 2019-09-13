@@ -343,7 +343,7 @@ class MainInfo extends Component{
                                 <td><a target="_black" href={"https://jira-stg.eisgroup.com/browse/"+this.state.data.jiraTicket}>{this.state.data.jiraTicket}</a></td>
                                 <td>
                                     {this.state.data.jiraTicketStatus}
-                                    {Object.keys(this.state.dataTickets) == 0?
+                                    {Object.keys(this.state.dataTickets).length == 0?
                                     <img src={"./loading.gif"} id="loadingTickets" />
                                     :
                                     null}
@@ -354,7 +354,7 @@ class MainInfo extends Component{
                                 <td><a target="_black" href={"https://jira-stg.eisgroup.com/browse/"+this.state.data.jiraHostTicket}>{this.state.data.jiraHostTicket}</a></td>
                                 <td>
                                     {this.state.data.jiraHostTicketStatus}
-                                    {Object.keys(this.state.dataTickets) == 0?
+                                    {Object.keys(this.state.dataTickets).length == 0?
                                     <img src={"./loading.gif"} id="loadingTickets" />
                                     :
                                     null}
@@ -365,7 +365,7 @@ class MainInfo extends Component{
                                 <td><a target="_black" href={"https://jira-stg.eisgroup.com/browse/"+this.state.data.jiraUserTicket}>{this.state.data.jiraUserTicket}</a></td>
                                 <td>
                                     {this.state.data.jiraUserTicketStatus}
-                                    {Object.keys(this.state.dataTickets) == 0?
+                                    {Object.keys(this.state.dataTickets).length == 0?
                                     <img src={"./loading.gif"} id="loadingTickets" />
                                     :
                                     null}
@@ -401,12 +401,12 @@ class MainInfo extends Component{
                         <tbody>
                             {this.state.data.documentTickets
                                 .map(key =>
-                                    <tr>
+                                    <tr key={key}>
                                         <td><a target="_black" href={"https://jira-stg.eisgroup.com/browse/"+key.key}>{key.key}</a></td>
                                         <td>{key.summary}</td>
                                         <td>
                                             {key.status}
-                                            {Object.keys(this.state.dataTickets) == 0?
+                                            {Object.keys(this.state.dataTickets).length == 0?
                                             <img src={"./loading.gif"} id="loadingTickets" />
                                             :
                                             null}
@@ -447,7 +447,7 @@ class MainInfo extends Component{
                                         <td>{key.summary}</td>
                                         <td>
                                             {key.status}
-                                            {Object.keys(this.state.dataTickets) == 0?
+                                            {Object.keys(this.state.dataTickets).length == 0?
                                             <img src={"./loading.gif"} id="loadingTickets" />
                                             :
                                             null}

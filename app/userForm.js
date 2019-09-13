@@ -44,11 +44,11 @@ class UserForm extends React.Component {
                 <div id="formContent">
                     <form onSubmit={this.handleSubmit}>
                         <h2 className="titleForm">Dashboard: Onboarding</h2>
-                        <input type="text" value={this.state.name} 
+                        <input type="text" value={this.state.name}
                             onChange={this.onLoginChange} className="fadeIn second" name="username" placeholder="Username"/>
-                        <input type="password" value={this.state.password} 
+                        <input type="password" value={this.state.password}
                             onChange={this.onPasswordChange} className="fadeIn third" name="username" placeholder="Password"/>
-                        <input type="submit" value="Login"  className="fadeIn fourth" value="Log In" className="btn"/>
+                        <input type="submit" value="Login"  className="fadeIn fourth btn" defaultValue="Log In"/>
                     </form>
                 </div>
             </div>

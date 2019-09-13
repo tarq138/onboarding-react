@@ -79,7 +79,7 @@ class DocumentDetails extends Component{
             return(
                 <div className="content-body">
                     <div>
-                        <ul className="nav nav-tabs nav-justified" id="myTab" role="tablist" id="onbMenu">
+                        <ul className="nav nav-tabs nav-justified" id="myTab" role="tablist">
                             <li className="nav-item" data-tip  data-for='mainInfo'>
                                 <a className="nav-link active" data-toggle="tab" role="tab" aria-controls="main-info" aria-selected="true" onClick={this.handleChange.bind(this)}><FontAwesomeIcon icon="home" /></a>
                             </li>
