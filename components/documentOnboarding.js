@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import {BrowserRouter, Route, Switch, Redirect} from 'react-router-dom';
-import {render} from 'react-dom';
 import HeadersOnboarding from './headersOnboarding';
 import BodyOnboarding from './bodyOnboarding'
 import "./MainOnboardding"

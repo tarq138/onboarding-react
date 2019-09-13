@@ -171,7 +171,6 @@ class Workstations extends Component{
             }).then(response => {
                 return response.json()
             }).then(json => {
-                var data = this.state
                 this.setState({data:json})
                 this.closeModal();
             })

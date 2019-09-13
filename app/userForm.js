@@ -48,7 +48,7 @@ class UserForm extends React.Component {
                             onChange={this.onLoginChange} className="fadeIn second" name="username" placeholder="Username"/>
                         <input type="password" value={this.state.password}
                             onChange={this.onPasswordChange} className="fadeIn third" name="username" placeholder="Password"/>
-                        <input type="submit" value="Login"  className="fadeIn fourth btn" defaultValue="Log In"/>
+                        <input type="submit" defaultValue="Login"  className="fadeIn fourth btn"/>
                     </form>
                 </div>
             </div>

@@ -30,7 +30,6 @@ class MainInfo extends Component{
     }
     webSocket(){
         var sock = new SockJS(localStorage.getItem('urlPrefix')+'/websocket/tracker?access_token='+localStorage.getItem('tokenId'));
-        var documentId = this.props.documentId;
         const stompClient  = Stomp.over(sock);
         stompClient.connect({}, () =>{
             stompClient.subscribe('/topic/jira', (response)=>{

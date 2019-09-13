@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import {NavLink, Redirect} from 'react-router-dom';
+import {Redirect} from 'react-router-dom';
 import '../app/App';
 import HeaderOnboarding from './new_version/headerOnboarding';
 import BodyOnboarding from './new_version/bodyOnboarding';

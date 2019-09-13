@@ -25,7 +25,7 @@ class TableWS extends Component{
         [].forEach.call(elems, function(el) {
             el.classList.remove("input-error");
         });
-        var elems = document.querySelectorAll(".columnNameWs input");
+        elems = document.querySelectorAll(".columnNameWs input");
         [].forEach.call(elems, function(el) {
             el.classList.remove("input-error");
         });

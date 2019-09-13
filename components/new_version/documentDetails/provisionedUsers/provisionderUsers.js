@@ -3,7 +3,6 @@ import MultiSelect from '../usersAccess/MultiSelect';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faPlus, faMinus, faInfoCircle, faEye} from "@fortawesome/free-solid-svg-icons";
-import { element } from 'prop-types';
 library.add(faPlus, faMinus, faInfoCircle, faEye);
 
 class ProvisionedUsers extends Component{
@@ -96,7 +95,7 @@ class ProvisionedUsers extends Component{
     }
     changeView(event){
         event.target.classList.add('active');
-        var value = (!(event.target.id.replace("Users", "") == "true")).toString();
+        var value = (event.target.id.replace("Users", "") != "true").toString();
         document.getElementById(value+"Users").classList.remove('active');
         this.getUsers(event.target.id.replace("Users", ""));
     }

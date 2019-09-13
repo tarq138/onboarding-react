@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {NavLink} from 'react-router-dom';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faFile, faFileAlt, faLongArrowAltLeft } from "@fortawesome/free-solid-svg-icons";
+import { faFile, faFileAlt } from "@fortawesome/free-solid-svg-icons";
 import '../app/App';
 library.add(faFile, faFileAlt);
 class HeadersOnboarding extends Component{

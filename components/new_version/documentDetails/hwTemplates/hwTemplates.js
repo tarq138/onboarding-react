@@ -79,7 +79,7 @@ class HWTemplate extends Component{
         [].forEach.call(elems, function(el) {
             el.classList.remove("input-error");
         });
-        var elems = document.querySelectorAll(".columnServerType input");
+        elems = document.querySelectorAll(".columnServerType input");
         [].forEach.call(elems, function(el) {
             el.classList.remove("input-error");
         });

@@ -18,19 +18,9 @@ class Main extends Component{
     }
 }
 class NotFound extends Component{render(){return <h2>Ресурс не найден</h2>;}}
-class Onboarding extends Component{
-  render(){
-    return <DocumentOnboarding documentId={this.props.match.params.id}/>
-  }
-}
 class DocumentDet extends Component{
   render(){
     return <DocumentDetails documentId={this.props.match.params.id}/>
-  }
-}
-class Create extends Component{
-  render(){
-    return <CreateDocument/>
   }
 }
 render(
